@@ -14,6 +14,7 @@ def lambda_handler(event, context):
     # Setting up connection to SES
     ses = boto3.client('ses', region_name='us-east-1')
 
+    # CHANGE EMAIL HERE
     SENDER = "YOUR_EMAIL@example.com"
     RECIPIENT = "YOUR_EMAIL@example.com"
 
